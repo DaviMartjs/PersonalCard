@@ -1,1 +1,22 @@
 <p>add-post works!</p>
+<div class="container">
+    <form>
+        <!-- #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)"> -->
+
+        <label for="fname">Email</label>
+        <input type="text" id="fname" name="email" placeholder="Seu Email" ngModel>
+
+        <label for="fname">Nome do Usuario</label>
+        <input type="text" id="fname" name="name" placeholder="Seu Nome" ngModel>
+
+        <label for="lname">Idade</label>
+        <input type="text" id="lname" name="age" placeholder="Sua Idade" ngModel>
+
+        <label for="lname">Idade</label>
+        <input type="password" id="lname" name="password" placeholder="Sua Senha" ngModel>
+
+        <div class="send-div">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</div>

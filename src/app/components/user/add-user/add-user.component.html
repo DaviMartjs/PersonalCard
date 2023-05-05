@@ -1,0 +1,20 @@
+<div class="container">
+    <form #addUser="ngForm" (ngSubmit)="onSubmit(addUser.value)">
+        <!-- #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)"> -->
+        <label for="fname">Email</label>
+        <input #email type="text" class="fname" name="email" placeholder="Seu Email" ngModel>
+
+        <label for="fname">Nome do Usuario</label>
+        <input #name type="text" class="fname" name="name" placeholder="Seu Nome" ngModel>
+
+        <label for="lname">Idade</label>
+        <input #age type="text" class="lname" name="age" placeholder="Sua Idade" ngModel>
+
+        <label for="lname">Idade</label>
+        <input #password type="password" class="lname" name="password" placeholder="Sua Senha" ngModel>
+
+        <div class="send-div">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</div>

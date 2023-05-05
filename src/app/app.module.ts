@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { AddCustomerComponent } from './components/user/add-user/add-customer.component';
+import { AddUserComponent } from './components/user/add-user/add-user.component';
 import { EditCustomerComponent } from './components/user/edit-user/edit-customer.component';
 import { ViewCustomerComponent } from './components/user/view-user/view-customer.component';
 import { RemoveCustomerComponent } from './components/user/remove-user/remove-customer.component';
@@ -20,14 +20,15 @@ import { ViewUserComponent } from './components/posts/view-user/view-user.compon
 import { UserComponent } from './pages/user/user.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { MatTableModule } from '@angular/material/table';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    AddCustomerComponent,
-    EditCustomerComponent,
-    ViewCustomerComponent,
-    RemoveCustomerComponent,
+    AddUserComponent,
+    EditUserComponent,
+    ViewUserComponent,
+    RemoveUserComponent,
     AddPostComponent,
     EditUserComponent,
     RemoveUserComponent,
@@ -44,7 +45,9 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
