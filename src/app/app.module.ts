@@ -21,7 +21,6 @@ import { UserComponent } from './pages/user/user.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { MatTableModule } from '@angular/material/table';
 
-
 @NgModule({
   declarations: [
     AppComponent,
