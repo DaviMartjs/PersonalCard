@@ -1,4 +1,7 @@
 <div class="container">
+
+    <h1>Cadastrar Usuario</h1>
+
     <form #addUser="ngForm" (ngSubmit)="onSubmit(addUser.value)">
         <!-- #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)"> -->
         <label for="fname">Email</label>
@@ -10,7 +13,7 @@
         <label for="lname">Idade</label>
         <input #age type="text" class="lname" name="age" placeholder="Sua Idade" ngModel>
 
-        <label for="lname">Idade</label>
+        <label for="lname">Senha</label>
         <input #password type="password" class="lname" name="password" placeholder="Sua Senha" ngModel>
 
         <div class="send-div">
